@@ -1,0 +1,384 @@
+{
+  "products": [
+    {
+      "title": "Áo polo gucci",
+      "price": 150000,
+      "description": "Áo thun nam cotton 100% là chiếc áo thời trang dành cho nữ đến từ thương hiệu Gucci nổi tiếng",
+      "image": "https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2023/09/ao-phong-nu-gucci-navy-with-gg-lame-logo-printed-tshirt-526759-x9w83-4921-mau-xanh-phoi-vang-65052f1220621-16092023112906.jpg",
+      "category": "2",
+      "isShowing": true,
+      "id": "1"
+    },
+    {
+      "title": "Quần jean nữ",
+      "price": 250000,
+      "description": "Quần jean nữ dáng ôm",
+      "image": "https://5sfashion.vn/storage/upload/images/products/D2vSTrbxdcGdZn9eJSDGpqQJ1uuUrdQp5gCFHGSC.jpg",
+      "category": "3",
+      "isShowing": true,
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "title": "Balo học sinh",
+      "description": "Balo học sinh phong cách trẻ trung",
+      "price": 200000,
+      "quantity": 20,
+      "category": "Balo",
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lgu53k39n29ede",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "title": "Váy Nữ Gucci",
+      "price": 350000,
+      "description": "Váy Nữ Gucci trẻ trung xinh xắn cho phái đẹp",
+      "image": "https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2024/03/vay-nu-gucci-with-bows-in-dark-blue-741563-xway04080-mau-xanh-65f3c4e94c730-15032024104753.jpg",
+      "category": "Váy",
+      "isShowing": true,
+      "id": "4"
+    },
+    {
+      "title": "Giày Gucci nam",
+      "price": 450000,
+      "description": "Giày Gucci chính hãng  dành cho nam đến từ thương hiệu Gucci nổi tiếng. Đôi giày có thiết kế sang trọng và lịch lãm.",
+      "image": "https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2023/12/giay-the-thao-gucci-gg-tennis-1977-606111-hvk20-9766-form-to-phoi-mau-size-5-5-656d459328adb-04122023102051.jpg",
+      "category": "2",
+      "isShowing": true,
+      "id": "5"
+    },
+    {
+      "id": "6",
+      "title": "Túi xách nữ",
+      "description": "Túi xách nữ dáng dài tiện lợi",
+      "price": 300000,
+      "quantity": 35,
+      "category": "Túi xách",
+      "image": "https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2024/03/tui-xach-tay-nu-dior-small-book-tote-mau-xanh-den-6600ec1e67898-25032024101438.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": "7",
+      "title": "Áo khoác nam",
+      "description": "Áo khoác nam dáng dài, chất liệu chống nước",
+      "price": 600000,
+      "quantity": 20,
+      "category": "Áo khoác",
+      "image": "https://bizweb.dktcdn.net/thumb/1024x1024/100/413/335/products/gucci-gg-jacquard-cotton-jacket-496919-x9v05-4245-496919x9v05-11.jpg?v=1617097902803",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": "8",
+      "title": "Đồng hồ nữ",
+      "description": "Đồng hồ nữ cao cấp, dây da thời trang",
+      "price": 800000,
+      "quantity": 15,
+      "category": "Đồng hồ",
+      "image": "https://luxshopping.vn/Uploads/News/doraemon-x-gucci-dive-watch-40mm.png",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": "9",
+      "title": "Bộ đồ đi biển nam",
+      "description": "Bộ đồ đi biển nam chất liệu thoáng mát",
+      "price": 280000,
+      "quantity": 30,
+      "category": "Bộ đồ đi biển",
+      "image": "https://randomshopvn.com/wp-content/uploads/2022/03/do-bo-di-bien-cay-dua-traithom-nen-trang.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": "10",
+      "title": "Quần short nữ",
+      "description": "Quần short nữ phong cách thể thao",
+      "price": 180000,
+      "quantity": 45,
+      "category": "Quần short",
+      "image": "https://cdn.kkfashion.vn/25300-large_default/quan-short-nu-mau-den-lung-cao-qcs05-04.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": "11",
+      "title": "Áo sơ mi nữ",
+      "description": "Áo sơ mi nữ công sở thanh lịch",
+      "price": 200000,
+      "quantity": 50,
+      "category": "Áo",
+      "image": "https://product.hstatic.net/1000247258/product/upload_333947e09c1746bb81213f01f20c972a_grande.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": "12",
+      "title": "Kính mát nam",
+      "description": "Kính mát nam thời trang, chống tia UV",
+      "price": 350000,
+      "quantity": 35,
+      "category": "Phụ kiện",
+      "image": "https://kinhhaitrieu.com/wp-content/uploads/2022/10/Gucci-GG0610SK_56_001-2.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": "13",
+      "title": "Mũ len nữ",
+      "description": "Mũ len nữ ấm áp, phong cách Hàn Quốc",
+      "price": 120000,
+      "quantity": 40,
+      "category": "Phụ kiện",
+      "image": "https://zerdio.com.vn/wp-content/uploads/2021/08/mu-len-kieu-Han-Quoc-ML04.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": "14",
+      "title": "Giày Cao Gót Nữ Chanel",
+      "description": "Giày cao gót nữ thanh lịch, quyến rũ  đến từ thương hiệu Chanel nổi tiếng của Pháp. Mẫu giày với gam màu sang trọng, hiện đại cùng form dáng trẻ trung cho người dùng thêm phần thanh lịch khi đi ra ngoài.",
+      "price": 500000,
+      "quantity": 25,
+      "category": "Giày",
+      "image": "https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2024/05/giay-cao-got-nu-chanel-colorblock-pattern-embroidered-accent-sandals-mau-be-den-size-36-6646cbe0472eb-17052024101544.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": "15",
+      "title": "Ví da nam",
+      "description": "Ví da nam sang trọng, đẳng cấp",
+      "price": 400000,
+      "quantity": 30,
+      "category": "Phụ kiện",
+      "image": "https://royalshop.vn/wp-content/uploads/2019/04/Vi-dai-Gucci-cam-tay-GC-408831.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": "16",
+      "title": "Dây chuyền nữ",
+      "description": "Dây chuyền nữ mạ vàng, thiết kế tinh tế",
+      "price": 250000,
+      "quantity": 45,
+      "category": "Phụ kiện",
+      "image": "https://inoxcongsang.com/wp-content/uploads/2020/08/TN112a-day-chuyen-titan-gucci.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": "17",
+      "title": "Lọ nước hoa nữ",
+      "description": "Lọ nước hoa nữ hương thơm quyến rũ",
+      "price": 600000,
+      "quantity": 20,
+      "category": "Mỹ phẩm",
+      "image": "https://kieulam.com.vn/wp-content/uploads/2020/12/23985533806.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": "18",
+      "title": "Bộ trang điểm nữ",
+      "description": "Bộ trang điểm nữ đầy đủ dụng cụ",
+      "price": 450000,
+      "quantity": 35,
+      "category": "Mỹ phẩm",
+      "image": "https://cf.shopee.vn/file/vn-11134207-7qukw-li11z2mvbzwld1",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": "19",
+      "title": "Son Gucci ",
+      "description": "Đây là thỏi son đến từ thương hiệu Gucci nổi tiếng. Sở hữu sắc son cam đất chưa bao giờ ngừng hot, nhẹ nhàng đầy quyến rũ cùng chất son mềm mượt sẽ là một thỏi son lì không thể thiếu trong bộ sưu tập của các cô nàng. ",
+      "price": 280000,
+      "quantity": 50,
+      "category": "Son",
+      "image": "https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2024/04/son-gucci-208-they-met-in-argentina-rouge-a-levres-satin-lipstick-mau-hong-cam-6621d33f132e8-19042024091319.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": "20",
+      "title": "Áo len nữ Gucci",
+      "description": "Áo len là chiếc áo thời trang dành cho nữ đến từ thương hiệu Gucci nổi tiếng. Mẫu áo thiết kế hiện đại, chất vải mềm mại thoáng khí giúp người dùng luôn cảm thấy thoải mái khi mặc đi học hay đi chơi với bạn bè.",
+      "price": 550000,
+      "quantity": 40,
+      "category": "Thiết bị gia dụng",
+      "image": "https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2024/03/ao-len-nu-gucci-grey-with-gg-logo-printed-713300xkcna1130-mau-xam-65f3bbed811ed-15032024100933.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": "21",
+      "title": "Mũ Louis Vuitton LV",
+      "description": "Mũ Louis Vuitton là chiếc mũ thời trang đến từ thương hiệu Louis Vuitton nổi tiếng. Sở hữuthiết kế thời trang, chiếc mũ LV cao cấp này đã được nhiều tín đồ thời trang săn đón.",
+      "price": 12000000,
+      "quantity": 10,
+      "category": "Mũ",
+      "image": "https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2024/05/mu-louis-vuitton-lv-damier-3d-cap-m7534m-mau-xanh-denim-664812118cab1-18052024092729.jpg",
+      "rating": {
+        "rate": 4.9,
+        "count": 150
+      }
+    },
+    {
+      "id": "22",
+      "title": "Áo Polo MLB Monogram",
+      "description": "Áo Polo MLB Monogram là mẫu áo thời trang đến từ thương hiệu nổi tiếng MLB của Hàn Quốc. Áo sở hữu gam màu trang nhã cùng chất liệu cao cấp, bền đẹp.",
+      "price": 35000000,
+      "quantity": 5,
+      "category": "Áo Polo",
+      "image": "https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2024/03/ao-polo-mlb-monogram-boston-red-sox-3apqm0343-43nys-mau-xanh-navy-65f2b0e0872d8-14032024151008.jpg",
+      "rating": {
+        "rate": 4.7,
+        "count": 120
+      }
+    },
+    {
+      "id": "23",
+      "title": "Quần Short Nam Dolce & Gabbana",
+      "description": "Quần Short Nam Dolce & Gabbana là mẫu quần đến từ thương hiệu Dolce & Gabbana. Quần short nam D&G Logo Print sở hữu kiểu dáng trẻ trung cùng chất liệu vải cao cấp, mang lại cảm giác thoải mái cho người mặc.",
+      "price": 200000,
+      "quantity": 8,
+      "category": "Quần",
+      "image": "https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2024/05/quan-short-nam-dolce-gabbana-d-g-logo-print-m4b56j-mau-den-trang-size-s-664d79292c392-22052024114841.jpg",
+      "rating": {
+        "rate": 4.8,
+        "count": 130
+      }
+    },
+    {
+      "title": "Áo Polo Nam Gucci ",
+      "price": "30000",
+      "description": "Áo Polo Nam Gucci là chiếc áo thời trang dành cho nam đến từ thương hiệu Gucci nổi tiếng và được nhiều tín đồ thời trang yêu thích săn đón.",
+      "image": "https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2024/04/ao-polo-nam-gucci-gg-embroidery-cotton-polo-shirt-768631-mau-xanh-navy-size-m-6621ee0962ca5-19042024110737.jpg",
+      "category": "Áo Polo",
+      "isShowing": true,
+      "id": "24"
+    },
+    {
+      "id": "de38",
+      "title": "áo đẹp lắm",
+      "price": "10000",
+      "description": "đẹp",
+      "image": "https://picsum.photos/300/200",
+      "category": "2",
+      "isShowing": true
+    },
+    {
+      "title": "sp đepk",
+      "price": "20",
+      "description": "đẹp",
+      "image": "https://picsum.photos/300/200",
+      "category": "4",
+      "isShowing": true,
+      "id": "37bd"
+    },
+    {
+      "id": "4655",
+      "title": "aaaaaaaaaaaaaaaaa",
+      "price": "200000000000",
+      "description": "đẹp",
+      "image": "https://picsum.photos/300/200",
+      "category": "2",
+      "isShowing": true
+    },
+    {
+      "id": "1841",
+      "title": "asssssssssssssss",
+      "price": "20000",
+      "description": "đẹp",
+      "image": "https://picsum.photos/300/200",
+      "category": "1",
+      "isShowing": true
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "title": "Áo"
+    },
+    {
+      "id": "2",
+      "title": "Quần"
+    },
+    {
+      "id": "3",
+      "title": "Váy"
+    },
+    {
+      "id": "4",
+      "title": "Phụ kiện"
+    },
+    {
+      "id": "5",
+      "title": "Son"
+    }
+  ],
+  "users": [
+    {
+      "email": "myha@gmail.com",
+      "password": "$2a$10$1fckUJZwF55kmtSBgTSEgumiISJ1KsE6y4r1MF0zFWii6tHvR0SL6",
+      "username": "nguyenductung",
+      "confirmPassword": "1223456",
+      "id": 7
+    },
+    {
+      "email": "tung@gmail.com",
+      "password": "$2a$10$XozaIyb8o46h6ZSi7RIbQe/gesetMox8IegLyKwFrTIsPDZs6xwjW",
+      "username": "tung",
+      "confirmPassword": "123456",
+      "id": 8
+    },
+    {
+      "email": "tungss@gmail.com",
+      "password": "$2a$10$baXq4N/SUN2AWGzw3s6lQOTHI1hDn0JWSgWPM2.TsaAohmkcEtKkK",
+      "username": "tung",
+      "confirmPassword": "123456",
+      "id": 9
+    },
+    {
+      "email": "tungiu@gmail.com",
+      "password": "$2a$10$LYXSSPuCdktV/F2RFEnAa.6B9JcRb5aTa8pdJDeJ/I09bizb61z/K",
+      "username": "tung",
+      "confirmPassword": "123456",
+      "id": 10
+    }
+  ]
+}

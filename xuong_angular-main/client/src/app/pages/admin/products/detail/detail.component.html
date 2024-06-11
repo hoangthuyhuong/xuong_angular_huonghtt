@@ -1,0 +1,99 @@
+<div class="flex-box" *ngIf="product">
+  <div class="left">
+    <div class="big-img">
+      <img src="{{ product.image }}" />
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="pname">{{ product.title }}</div>
+
+    <div class="description">{{ product.description }}</div>
+
+    <div class="price">{{ product.price }} vnđ</div>
+    <div class="size">
+      <p>Size :</p>
+      <div class="psize active">M</div>
+      <div class="psize">L</div>
+      <div class="psize">XL</div>
+      <div class="psize">XXL</div>
+    </div>
+    <div class="quantity">
+      <p>Quantity :</p>
+      <input type="number" min="1" max="5" value="1" />
+    </div>
+    <div class="btn-box">
+      <button class="cart-btn">Add to Cart</button>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <div class="d-flex">
+    <div class="col-lg-6">
+      <div class="card">
+        <h2>Product Auction</h2>
+        <div *ngIf="product" class="bid-form">
+          <countdown #cd [config]="config" class="mb-4"></countdown>
+          <form [formGroup]="bidForm" (ngSubmit)="handleSubmit()">
+            <div class="form-group">
+              <label for="price">Your Bid Price</label>
+              <input
+                type="number"
+                class="form-control"
+                id="price"
+                formControlName="price"
+                placeholder="Enter your bid price"
+              />
+              <div
+                *ngIf="
+                  bidForm.controls['price'].errors &&
+                  bidForm.controls['price'].touched
+                "
+                class="text-danger"
+              >
+                <div *ngIf="bidForm.controls['price'].errors['required']">
+                  Price is required
+                </div>
+                <div *ngIf="bidForm.controls['price'].errors['min']">
+                  Price must be at least 1
+                </div>
+              </div>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary mt-3 btn-bid"
+              [disabled]="bidForm.invalid"
+            >
+              Bid Now
+            </button>
+          </form>
+        </div>
+      </div>
+      <div *ngIf="product" class="max-bid">
+        <p class="mb-1">Max Bid Price: {{ product.bidPriceMax }}</p>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="card-2 bid-history">
+        <h2>Bid History</h2>
+        <div *ngIf="product">
+          <div
+            *ngFor="let bid of product.bids; trackBy: trackByBid"
+            class="bid-item"
+          >
+            <p class="mb-1">
+              <i class="bx bxs-user"></i> {{ bid.user.username }}
+            </p>
+            <p class="mb-1">Bid Price: {{ bid.price }}</p>
+            <p class="mb-0">
+              Bid Time: {{ bid.createdAt | date : "dd/MM/yyyy" }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

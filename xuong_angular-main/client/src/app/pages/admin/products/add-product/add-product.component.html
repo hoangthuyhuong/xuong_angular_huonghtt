@@ -1,0 +1,135 @@
+<div class="container">
+  <h3>Thêm sản phẩm mới</h3>
+  <ng-toast [style]="{ width: '300px' }"></ng-toast>
+  <form class="mt-3" [formGroup]="addProductForm" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="title" class="form-label">Tên sản phẩm</label>
+      <input
+        type="text"
+        placeholder="Nhập tên sản phẩm"
+        class="form-control"
+        id="title"
+        formControlName="title"
+      />
+      @if(addProductForm.controls['title'].errors?.['required'] &&
+      addProductForm.controls['title'].touched ) {
+      <div class="text-danger small mt-3">Tên sản phẩm là bắt buộc *</div>
+      } @if(addProductForm.controls['title'].errors?.['minlength'] &&
+      addProductForm.controls['title'].touched ) {
+      <div class="text-danger small mt-3">Tên sản phẩm tối thiểu 6 kí tự *</div>
+      }
+    </div>
+    <div class="mb-3">
+      <label for="productImage" class="form-label">Ảnh sản phẩm</label>
+      <input
+        type="text"
+        class="form-control"
+        formControlName="image"
+        placeholder="Nhập ảnh sản phẩm"
+        id="image"
+      />
+
+      @if(addProductForm.controls['image'].errors?.['required'] &&
+      addProductForm.controls['image'].touched ) {
+      <div class="text-danger small mt-3">Ảnh sản phẩm là bắt buộc *</div>
+      }
+    </div>
+
+    <div class="mb-3">
+      <label for="productPrice" class="form-label">Giá sản phẩm</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Nhập giá sản phẩm"
+        id="productPrice"
+        formControlName="price"
+      />
+      <div
+        *ngIf="
+          addProductForm.controls['price'].errors &&
+          addProductForm.controls['price'].touched
+        "
+      >
+        <div
+          *ngIf="addProductForm.controls['price'].errors['required']"
+          class="text-danger small mt-3"
+        >
+          Giá sản phẩm là bắt buộc *
+        </div>
+
+        <div
+          *ngIf="addProductForm.controls['price'].errors['min']"
+          class="text-danger small mt-3"
+        >
+          Giá sản phẩm phải là số và lớn hơn 0
+        </div>
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="productDescription" class="form-label">Mô tả sản phẩm</label>
+      <textarea
+        class="form-control"
+        placeholder="Nhập mô tả.."
+        id="productDescription"
+        rows="3"
+        formControlName="description"
+      ></textarea>
+      @if(addProductForm.controls['description'].errors?.['required'] &&
+      addProductForm.controls['description'].touched ) {
+      <div class="text-danger small mt-3">Mô tả sản phẩm là bắt buộc *</div>
+      }
+    </div>
+
+    <div class="mb-3">
+      <label for="category" class="form-label">Danh mục</label>
+      <select class="form-control" id="category" formControlName="category">
+        <option value="">---Chọn danh mục---</option>
+        @for (category of categories; track category._id) {
+        <option value="{{ category._id }}">{{ category.name }}</option>
+        }
+      </select>
+    </div>
+    @if(addProductForm.controls['category'].errors?.['required'] &&
+    addProductForm.controls['category'].touched ) {
+    <div class="text-danger small mt-3">Danh mục sản phẩm là bắt buộc *</div>
+    }
+    <div class="mb-3">
+      <label for="startAt" class="form-label">Thời gian bắt đầu</label>
+      <input
+        type="datetime-local"
+        class="form-control"
+        id="startAt"
+        formControlName="startAt"
+        [min]="minDate"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="times" class="form-label">Thời gian</label>
+      <select class="form-control" id="times" formControlName="bidTime">
+        <option value="">---Chọn thời gian---</option>
+        <option value="15">15p</option>
+        <option value="30">30p</option>
+        <option value="60">1h</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <div class="form-check">
+        <input
+          type="checkbox"
+          class="form-check-input"
+          id="dropdownCheck"
+          formControlName="isShowing"
+          min="0"
+        />
+        <label class="form-check-label" for="dropdownCheck"> Is Show </label>
+      </div>
+    </div>
+    <button
+      type="submit"
+      [disabled]="addProductForm.invalid || loading"
+      class="btn btn-success"
+    >
+      Submit <i class="fa fa-spinner fa-spin fa-fw" *ngIf="loading"></i>
+    </button>
+  </form>
+</div>

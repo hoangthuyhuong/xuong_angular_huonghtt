@@ -1,0 +1,48 @@
+footer {
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+}
+.ft-content{
+  margin-left: 150px;
+}
+.ft-content p{
+  color: #9F9F9F;
+}
+.link {
+  margin-left: 50px;
+}
+.link h4 {
+  color: #9f9f9f;
+  margin-left: 20px;
+}
+.link nav > ul > li {
+  padding-bottom: 15px;
+}
+.link nav > ul > li > a {
+  margin-left: -9px;
+  color: #000;
+  text-decoration: none;
+}
+.help h4 {
+  color: #9f9f9f;
+  margin-left: 20px;
+}
+.help nav > ul > li {
+  padding-bottom: 15px;
+}
+.help nav > ul > li > a {
+  margin-left: -9px;
+    color: #000;
+  text-decoration: none;
+}
+.hr-end{
+  width: 1200px;
+  margin: 0 auto;
+}
+.ft-end {
+  margin-left: 160px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}

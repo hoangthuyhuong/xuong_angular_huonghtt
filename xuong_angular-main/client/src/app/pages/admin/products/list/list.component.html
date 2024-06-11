@@ -1,0 +1,101 @@
+<div class="head">
+  <h3>Danh sách sản phẩm</h3>
+  <div class="search">
+    <form (submit)="onSearch()">
+      <div class="form-input">
+        <input
+          name="filterValue"
+          [(ngModel)]="filterValue"
+          placeholder="Search..."
+          (input)="onSearch()"
+        />
+        <button type="submit" class="search-btn">
+          <i class="bx bx-search"></i>
+        </button>
+      </div>
+    </form>
+  </div>
+  <a routerLink="/admin/products/add" class="btn btn-success"
+    >Thêm mới sản phẩm</a
+  >
+</div>
+
+<ng-toast [style]="{ width: '300px' }"></ng-toast>
+
+<table class="table table-striped mx-3">
+  <thead>
+    <tr class="text-center">
+      <th>STT</th>
+      <th>Name</th>
+      <th>Image</th>
+      <th>Price</th>
+      <th>Description</th>
+
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let p of products; let i = index">
+      <th>{{ i + 1 }}</th>
+      <td>
+        <a
+          style="text-decoration: none; color: #000"
+          [routerLink]="['/admin/products/detail', p._id]"
+          >{{ p.title }}</a
+        >
+      </td>
+      <td>
+        <a [routerLink]="['/admin/products/detail', p._id]"
+          ><img
+            style="width: 100px; cursor: pointer"
+            src="{{ p.image }}"
+            alt=""
+        /></a>
+      </td>
+      <td>{{ p.price }}</td>
+      <td>{{ p.description }}</td>
+
+      <td>
+        <button
+          [routerLink]="['/admin/products/update', p._id]"
+          class="btn btn-primary mx-2"
+        >
+          Edit
+        </button>
+
+        <button (click)="handleDeleteProduct(p._id)" class="btn btn-danger">
+          Delete
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div class="mt-5 d-flex justify-content-center">
+  <nav>
+    <ul class="pagination">
+      <li class="page-item" [class.disabled]="page === 1">
+        <a
+          class="page-link"
+          (click)="onPageChange(page - 1)"
+          aria-label="Previous"
+        >
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li
+        *ngFor="let pageNumber of pages"
+        class="page-item"
+        [class.active]="pageNumber === page"
+      >
+        <a class="page-link" (click)="onPageChange(pageNumber)">
+          {{ pageNumber }}
+        </a>
+      </li>
+      <li class="page-item" [class.disabled]="page === totalPages">
+        <a class="page-link" (click)="onPageChange(page + 1)" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>

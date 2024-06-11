@@ -1,0 +1,356 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.header {
+  width: 97%;
+  margin: auto;
+  margin-top: 30px;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.menu .m{
+  margin-left: 20px;
+  /* font-size: 50px; */
+}
+.menu .m a{
+  margin: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+.menu .m .a{
+  margin: 10px;
+  font-size: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.menu .m .wel{
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.menu .logo img{
+  width: 170px;
+}
+.menu .search button{
+  margin-right: 30px;
+  border: 1px solid grey;
+  padding: 5px;
+  /* font-size: 10px; */
+  color: grey;
+  margin-left: 5px;
+  border-radius: 3px;
+}.menu .search button:hover{
+    background-color: black;
+    color: white;
+}
+
+.menu .search input{
+  border: 1px solid grey;
+  padding: 5px;
+  border-radius: 3px;
+}
+header .banner{
+  width: 95%;
+  margin: auto;
+}
+header .banner img{
+    width: 100%;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius:100px ;
+}
+header .three-color{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  text-align: center;
+  
+}
+header .three-color .color-1{
+  margin-left: 30px;
+  background-color: #D73831;
+  width: 400px;
+  height: 40px;
+  font-weight: 600;
+  color: white;
+  line-height: 40px;
+}
+header .three-color .color-2{
+  background-color: #DC633A;
+  width: 400px;
+  font-weight: 600;
+  color: white;
+  line-height: 40px;
+}
+
+header .three-color .color-3{
+  margin-right: 31px;
+  background-color: #AC2F33;
+  width: 400px;
+  font-weight: 600;
+  color: white;
+  line-height: 40px;
+}
+.main{
+  width: 92%;
+  margin: auto;
+}
+.product {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: space-between;
+}
+.product .pro{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: start;
+}
+.product .pro .img{
+    width: 200px;
+    height: 300px;
+}
+.product .pro .a{
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #6e6c6c;
+
+}
+.product .pro img{
+  width: 100%;
+}
+.product .pro .tick{
+  display: flex;
+  margin-top: 20px;
+
+}
+.product .pro .tick .tick-1{
+  background-color: #dc3545;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.product .pro .tick .tick-2{
+  background-color: #6c757d;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.product .pro .tick .tick-3{
+  background-color: #373737;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.product img:hover{
+  cursor: pointer;
+  background-image: url(https://devo.vn/wp-content/uploads/2023/01/meo-cam-dao.jpg);
+}
+.product .pro .name{
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #6e6c6c;
+  /* font-family: 'Montserrat'; */
+}
+.product .pro .price{
+  margin-right: 70px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.product .pro .right{
+  display: flex;
+  /* align-items: center; */
+  margin-top: 15px;
+
+}
+.product .pro .right button{
+  width: 60px;
+  height: 25px;
+  border: none;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: #dc3545;
+}
+.main .title{
+  margin-top: 30px;
+  font-family: 'Montserrat';
+  margin-bottom: 30px;
+}
+.ft{
+  width: 92%;
+  margin: auto;
+  background-color: white;
+  /* padding: 30px; */
+}
+.ft footer{
+  margin-top: 50px;
+}
+.ft footer form{
+  margin-right: 40px;
+}
+.color{
+  background-color: #AC2F33;
+  border: none;
+}
+.hr{
+  margin-top: 50px;
+}
+
+
+/*đăng kí*/
+.re{
+  width: 500px;
+  margin-top: 30px;
+  background-color: #61dafb;
+  padding: 40px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.register{
+  display: flex;
+  justify-content: center;
+ 
+}
+.login{
+  display: flex;
+  justify-content: center;
+}
+.re .sub{
+  border: none;
+  border-radius: 10px;
+  width: 100px;
+  color: palevioletred;
+}
+/* .re input{
+   color: palevioletred;
+} */
+.re h2{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: palevioletred;
+}
+
+.detaill{
+  display: flex;
+  justify-content: center;
+  /* width: 80%; */
+}
+.detaill .chitiet{
+  margin-left: 100px;
+  text-align: left;
+}
+.detaill .chitiet .name{
+  font-size: 30px;
+  font-weight: 500;
+}
+.detaill .chitiet .gia{
+  font-size: 20px;
+  font-weight: 500;
+}
+.detaill .chitiet .id{
+  /* font-weight: 500; */
+  font-size: 20px;
+}
+.detaill .chitiet button{
+  /* font-weight: 500; */
+  /* font-size: 20px;
+   */
+   background-color: rgb(192, 62, 62);
+   border: none;
+   width: 100px;
+   border-radius: 10px;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+.detaill .chitiet .bt-them{
+  /* font-weight: 500; */
+  /* font-size: 20px;
+   */
+   background-color: rgb(145, 125, 125);
+   border: none;
+   width: 200px;
+   margin-left: 10px;
+   border-radius: 10px;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:  white;
+}
+.detaill .anh{
+  width: 400px;
+  /* margin-right: 100px; */
+}
+.detaill .anh-con{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.detaill .anh-con .anh{
+  width: 80px;
+  margin-left: 20px;
+}
+.detaill .anh-con .anh img{
+  width: 100%;
+  margin: 5px;
+}
+.detaill .anh img{
+  width: 100%;
+}
+.detaill .tick .tick-1{
+  background-color: #AC2F33;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}

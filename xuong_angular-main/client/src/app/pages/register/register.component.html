@@ -1,0 +1,36 @@
+<div class="background">
+  <div class="shape"></div>
+  <div class="shape"></div>
+</div>
+<!-- <ng-toast [style]="{ width: '300px' }"></ng-toast> -->
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+  <h3>Đăng ký</h3>
+  <label for="exampleInputEmail1">Username</label>
+  <input type="text" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="username"
+    formControlName="username" />
+  @if(registerForm.controls['username'].errors?.['required'] &&
+  registerForm.controls['username'].touched) {
+  <div class="text-danger small">Username là bắt buộc *</div>
+  }
+
+  <label for="exampleInputEmail1">Email address</label>
+  <input type="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"
+    formControlName="email" />
+  @if(registerForm.controls['email'].errors?.['required'] &&
+  registerForm.controls['email'].touched) {
+  <div class="text-danger small">Email là bắt buộc *</div>
+  } @if(registerForm.controls['email'].errors?.['email'] &&
+  registerForm.controls['email'].touched) {
+  <div class="text-danger small mt-3">Email không đúng định dạng *</div>
+  }
+
+  <label for="exampleInputPassword1">Password</label>
+  <input type="password" id="exampleInputPassword1" placeholder="Password" formControlName="password" />
+  @if(registerForm.controls['password'].errors?.['required'] &&
+  registerForm.controls['password'].touched) {
+  <div class="text-danger small">password là bắt buộc *</div>
+  }
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+
+</form>

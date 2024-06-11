@@ -1,0 +1,138 @@
+<div class="container">
+  <div class='header'>
+
+    <div class='menu'>
+        <div class='m'>
+            <a class="nu" to="/">NỮ</a>
+            <a to="/products">NAM</a>
+            <a href="#">TRẺ EM</a>
+            <a href="#">BIG SALE THÁNG 3</a>
+            <a href="#">BỘ SƯU TẬP</a>
+            <a href="#">VỀ CHÚNG TÔI</a>
+        </div>
+        <div class='logo'>
+            <a><img src="https://pubcdn.ivymoda.com/ivy2/images/logo.png" alt="" /></a>
+        </div>
+        <div class='search'>
+            <input type="text" placeholder='Tìm kiếm sản phẩm' />
+            <button>Tìm kiếm</button>
+        </div>
+    </div>
+
+    <header>
+        <div class='three-color'>
+            <div class='color-1'>
+                SALE ALL 50% + THÊM 10% HĐ TỪ 2 SP
+            </div>
+            <div class='color-2'>
+                SALE UPTO 75%
+            </div>
+            <div class='color-3'>
+                NEW ARRIVAL + GIẢM HĐ TỪ 2 SP
+            </div>
+        </div>
+    </header>
+</div>
+<div class="detail-pro" *ngIf="product">
+    <div class="img-detail">
+    <img src={{product.image}}
+            width="400" alt="">
+    </div>
+    <div class="right-detail">
+        <p class="title">{{product.title}}</p>
+        <p class="id">SKU: SS00{{product._id}}</p>
+        <p class="id">Category: {{product.category}}</p>
+        <p class="price">{{product.price}}đ</p>
+        <div class="size">
+            <div class="div-size">S</div>
+            <div class="div-size">M</div>
+            <div class="div-size">L</div>
+            <div class="div-size">XL</div>
+            <div class="div-size">XXL</div>
+        </div>
+        <p class="quantity">Số lượng: 1</p>
+        <div class="action">
+            <div class="add">THÊM VÀO GIỎ</div>
+            <div class="buy">MUA HÀNG</div>
+
+        </div>
+        <div class="description">
+            <p class="infor">Giới thiệu:</p>
+            <p>{{product.description}} </p>
+        </div>
+    </div>
+</div>
+<div class="container mt-5">
+  <div class="d-flex">
+    <div class="col-lg-6">
+      <div class="card">
+        <h2>Đấu giá sản phẩm</h2>
+        <div *ngIf="product" class="bid-form">
+          <countdown #cd [config]="config" class="mb-4"></countdown>
+          <form [formGroup]="bidForm" (ngSubmit)="handleSubmit()">
+            <div class="form-group">
+              <label for="price">Giá của bạn</label>
+              <input
+                type="number"
+                class="form-control p-2 mt-2 mb-3"
+                id="price"
+                formControlName="price"
+                placeholder="Enter your bid price"
+              />
+              <div
+                *ngIf="
+                  bidForm.controls['price'].errors &&
+                  bidForm.controls['price'].touched
+                "
+                class="text-danger"
+              >
+                <div *ngIf="bidForm.controls['price'].errors['required']">
+                  Giá bắt buộc nhập
+                </div>
+                <div *ngIf="bidForm.controls['price'].errors['min']">
+                  Giá tối thiểu là 1
+                </div>
+              </div>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary mt-2"
+              [disabled]="bidForm.invalid"
+            >
+              Đặt giá
+            </button>
+          </form>
+        </div>
+      </div>
+      <div *ngIf="product" class="max-bid">
+        <p class="mb-1 text-danger fs-4">
+          Giá cao nhất: {{ product.bidPriceMax }} $
+        </p>
+      </div>
+    </div>
+
+    <div class="col-lg-6 mb-3">
+      <div class="card-2 bid-history">
+        <h2>Lịch sử đấu giá</h2>
+        <div *ngIf="product">
+          <div
+            *ngFor="let bid of product.bids; trackBy: trackByBid"
+            class="bid-item"
+          >
+            <p class="mb-1">
+              <i class="bx bxs-user"></i> {{ bid.user.username }}
+            </p>
+            <p class="mb-1">Giá đấu: {{ bid.price }} $</p>
+            <p class="mb-0">
+              Thời gian đấu giá:
+              {{ bid.createdAt | date : "dd/MM/yyyy HH:mm:ss" }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+

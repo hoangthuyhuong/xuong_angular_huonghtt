@@ -1,0 +1,39 @@
+<div class="background">
+  <div class="shape"></div>
+  <div class="shape"></div>
+</div>
+<form [formGroup]="login" (ngSubmit)="onSubmit()">
+  <h3>Đăng nhập</h3>
+
+  <label for="username">Tên đăng nhập</label>
+  <input formControlName="email" type="text" placeholder="Email hoặc Số điện thoại" id="username">
+
+  <label for="password">Mật khẩu</label>
+  <div class="form-field d-flex align-items-center position-relative">
+      <input 
+        style="padding: 10px; padding-right: 40px;" 
+        [type]="hide ? 'password' : 'text'" 
+        name="password" 
+        id="pwd" 
+        formControlName="password"
+        placeholder="Password" 
+      />
+      <i 
+        class="bx position-absolute" 
+        [ngClass]="hide ? 'bx-hide' : 'bx-show'" 
+        (click)="toggleVisibility()" 
+        style="right: 10px; cursor: pointer;"
+      ></i>
+    </div>
+    <button type="submit">Đăng nhập</button>
+    
+
+  <!-- <div class="social">
+    <div class="go">  Google</div>
+    <div class="fb"> Facebook</div>
+  </div> -->
+  <div style="text-align: center;">
+      <a routerLink="/register" style="font-size: 10px;"  >Đăng ký</a>
+  </div>
+ 
+</form>

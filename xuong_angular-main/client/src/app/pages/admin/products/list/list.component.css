@@ -1,0 +1,49 @@
+
+
+.search form {
+  display: flex;
+}
+.search .form-control {
+  margin-right: 5px;
+}
+
+.search .btn {
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+}
+
+.search .btn .bx-search {
+  font-size: 16px;
+}
+
+.search .form-input {
+  display: flex;
+  align-items: center;
+  height: 36px;
+}
+ .form-input input {
+  flex-grow: 1;
+  padding: 0 16px;
+  height: 100%;
+  border: none;
+  background: var(--grey);
+  border-radius: 36px 0 0 36px;
+  outline: none;
+  width: 100%;
+  color: var(--dark);
+}
+ form .form-input button {
+  width: 36px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--blue);
+  color: var(--light);
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 0 36px 36px 0;
+  cursor: pointer;
+}

@@ -1,0 +1,37 @@
+<app-header></app-header>
+<div class='main'>
+    <main>
+        <div class='title d-flex'>
+            <h2>NEW ARRIVAL</h2> 
+        </div>
+        <div  class="row">
+            <div class="col-md-3 py-5" *ngFor="let p of productList | paginate: { itemsPerPage: pageSize, currentPage: page }">
+              <div class="card h-100">
+                <a [routerLink]="['/products', p._id]">
+                  <img
+                    class="card-img-top mx-auto mt-5 d-block"
+                    src="{{ p.image }}"
+                    alt="Product Image"
+                    style="max-width: 150px; height: 150px; object-fit: contain"
+                  />
+                </a>
+    
+                <div class="card-body">
+                  <h5 class="card-title fs-6 text-decoration-none text-dark">
+                    {{ p.title }}
+                  </h5>
+                  <p class="card-text fs-6">{{ p.price }} vnđ</p>
+                  <div class="mt-auto text-center">
+                    <a [routerLink]="['/products', p._id]" class="btn ct btn-primary"
+                      >Xem chi tiết</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </main>
+    <pagination-controls (pageChange)="page = $event"></pagination-controls>
+</div>
+<app-footer></app-footer>
